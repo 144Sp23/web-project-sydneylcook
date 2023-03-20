@@ -70,6 +70,28 @@ footer p a {
     text-decoration: none;
 }
 
+#addesigns, #newsdesigns, #photography {
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+#aboutmeimg {
+    width: 25%;
+    float: left;
+    margin: 0 2%;
+}
+
+#aboutme {
+    width: 65%;
+    float: left;
+    margin: 0 2%;
+}
+
+#pastwork {
+    text-align: center;
+    margin: 0 0 2% 0;
+}
 
 
 
