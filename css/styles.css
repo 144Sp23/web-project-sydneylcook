@@ -5,7 +5,17 @@ File name: style.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h3, h1, div, img, ul, li {
+body,
+header,
+nav,
+main,
+footer,
+h3,
+h1,
+div,
+img,
+ul,
+li {
     margin: 0;
     padding: 0;
     border: 0;
@@ -13,13 +23,10 @@ body, header, nav, main, footer, h3, h1, div, img, ul, li {
 
 /* Style rules for basic */
 main {
+    background-color: #fff;
     clear: left;
     padding: 2%;
     font-size: 1.25em;
-}
-
-.main {
-    background-color: #fff;
 }
 
 body {
@@ -39,7 +46,7 @@ header {
 }
 
 a:hover {
-  color: #005900;
+    color: #005900;
 }
 
 nav {
@@ -61,7 +68,7 @@ nav li {
 
 nav li a {
     display: block;
-    color:#fff;
+    color: #fff;
     text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -97,7 +104,9 @@ footer p a {
     text-decoration: none;
 }
 
-#addesigns, #newsdesigns, #photography {
+#addesigns,
+#newsdesigns,
+#photography {
     width: 29%;
     float: left;
     margin: 0 2%;
@@ -117,9 +126,9 @@ footer p a {
 
 /* Clear floats after the columns */
 footer {
-  content: "";
-  display: table;
-  clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 #experiencelist {
@@ -158,179 +167,3 @@ footer {
     padding: 0.5% 1% 1% 0;
     margin-left: 2%;
 }
-
-
-
-
-
-
-
-/* Other stuff
-
-body {
-    background-color: #ccc;
-}
-
-.about me image {
-    align-content: left;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.column {
-  float: left;
-  width: 31.33%;
-  margin: 0.5%
-}
-
-footer {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Could use later
-Style Rules for body and images
-body {
-  margin: 10px;
-}
-
-img {
-  max-width: 100%;
-  display: block;
-}
-
-Style rules for mobile viewport
-    Style rule for header
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-header img {
-  margin: 0 auto;
-}
-
-Style rules for navigation area
-nav {
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-#about image {
-    align-content: center;
-}
-
-#navigation {
-  float: right;
-  text-align: center;
-}
-
-Show mobile class, hid tablet-desktop class
-.mobile {
-  display: block;
-}
-
-.tablet-desktop {
-  display: none;
-}
-
-Style rules for main content
-main {
-  background-color: #fff;
-  padding: 2%;
-  font-size: 1.15em;
-  font-family: 'Roboto Slab', serif;
-}
-
-.tel-link {
-  background-color: #404040;
-  padding: 2%;
-  margin: 0 auto;
-  width: 80%;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.tel-link a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.5em;
-  display: block;
-}
-
-Media Query for Desktop Viewport
-@media screen and (min-width: 1015px), print {
- 
-    Desktop Viewport: Style rule for header
-    header {
-        width: 25%;
-        float: left;
-        padding-bottom: 0;
-    }
-    
-    Desktop Viewport: Style rules for nav area
-    nav {
-        float: right;
-        width: 70%;
-        margin: 4em 1em 0 0;
-    }
-    
-    nav ul {
-        text-align: right;
-    }
-    
-    nav li {
-        border: none;
-    }
-    
-    nav li a {
-        padding: 0.5em 1em;
-    }
-    
-    nav li a:hover {
-        color: #000;
-        background-color: #fff;
-    }
-    
-    Desktop Viewport: Style Rules for main content
-    main {
-        clear: left;
-    }
-    
-    main h1 {
-        font-size: 1.8em;
-    }
- 
-    #weights, #cardio, #training {
-        width: 29%;
-        float: left;
-        margin: 0 2%;
-    }
-    
-    #exercises {
-        clear: left;
-    }
-    
-} */
