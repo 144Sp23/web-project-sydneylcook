@@ -5,13 +5,23 @@ File name: style.css
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, h3, h1, div, img, ul {
+body, header, nav, main, footer, h3, h1, div, img, ul, li {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
 /* Style rules for basic */
+main {
+    clear: left;
+    padding: 2%;
+    font-size: 1.25em;
+}
+
+.main {
+    background-color: #fff;
+}
+
 body {
     background-color: #87ae73;
 }
@@ -19,11 +29,17 @@ body {
 img {
     max-width: 100%;
     display: block;
+    margin-top: 2%;
 }
 
 header {
     width: 25%;
     float: left;
+    margin-bottom: 2%
+}
+
+a:hover {
+  color: #005900;
 }
 
 nav {
@@ -51,11 +67,22 @@ nav li a {
     text-decoration: none;
 }
 
-main {
-    clear: left;
-    background-color: #fff;
-    padding: 2%;
+h1 {
+    font-family: 'Lora', serif;
+    color: #005900;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #005900;
     font-size: 1.25em;
+    margin: 0.5% 0;
+}
+
+.external-link {
+    color: #005900;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer p {
@@ -79,18 +106,57 @@ footer p a {
 #aboutmeimg {
     width: 25%;
     float: left;
-    margin: 0 2%;
+    margin: 0 1%;
 }
 
 #aboutme {
-    width: 65%;
+    width: 70%;
     float: left;
-    margin: 0 2%;
+    margin: 0 1%;
+}
+
+/* Clear floats after the columns */
+footer {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#experiencelist {
+    margin-left: 2%;
+}
+
+#experiencetitle {
+    text-align: center;
+    margin: 0 0 2% 0;
 }
 
 #pastwork {
     text-align: center;
     margin: 0 0 2% 0;
+}
+
+#education ul {
+    margin-bottom: 2%;
+}
+
+#experience ul {
+    margin-bottom: 2%;
+}
+
+#education li {
+    padding: 0.5% 1% 1% 0;
+    margin-left: 2%;
+}
+
+#experience li {
+    padding: 0.5% 1% 1% 0;
+    margin-left: 2%;
+}
+
+#accomplishments li {
+    padding: 0.5% 1% 1% 0;
+    margin-left: 2%;
 }
 
 
@@ -100,9 +166,6 @@ footer p a {
 
 
 /* Other stuff
-a:hover {
-  color: #FF00FF;
-}
 
 body {
     background-color: #ccc;
