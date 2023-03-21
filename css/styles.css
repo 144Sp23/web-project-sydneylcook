@@ -22,7 +22,7 @@ li {
 }
 
 /* Begin style rules for desktop viewport */
-/* Style rules for main, body, img, header, and hover */
+/* Style rules for main, body, img, and header */
 main {
     background-color: #fff;
     clear: left;
@@ -46,10 +46,14 @@ header {
     margin-bottom: 2%
 }
 
+/* Style rules for hover links */
 a:hover {
     color: #005900;
 }
 
+.external-link:hover {
+    color: #87ae73;
+}
 
 /* Style rules for navigation */
 nav {
@@ -100,6 +104,7 @@ h3 {
 footer p {
     font-size: 1em;
     text-align: center;
+    align-content: center;
     color: #fff;
     padding: 0 1em;
 }
@@ -138,7 +143,6 @@ footer p a {
 /* Clear floats after the columns */
 footer {
     content: "";
-    display: table;
     clear: both;
 }
 
@@ -180,20 +184,8 @@ footer {
     margin-left: 2%;
 }
 
-/* Begin style rules for mobile viewport
-header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: #87ae73;
-    height: 190px;
-}
-
-header img {
-    margin: 0 auto;
-}
-
-
+/* Begin style rules for mobile viewport */
+/* Style rules for navigation */
 nav {
     padding: 1%;
     margin-bottom: 1%;
@@ -220,7 +212,6 @@ nav li a {
     padding: 0.5em 1em;
     text-decoration: none;
 }
-*/
 
 /* Media Query for Desktop Viewport */
 @media screen and (min-width: 769px) {
@@ -260,3 +251,4 @@ nav li a {
         font-size: 1.8em;
     }
 }
+
