@@ -1,7 +1,7 @@
 /*
 Author: Sydney Cook
-Date: 3-18-23
-File name: style.css 
+Date: 3-21-23
+File name: styles.css 
 */
 
 /* CSS Reset */
@@ -21,7 +21,8 @@ li {
     border: 0;
 }
 
-/* Style rules for basic */
+/* Begin style rules for desktop viewport */
+/* Style rules for main, body, img, header, and hover */
 main {
     background-color: #fff;
     clear: left;
@@ -49,6 +50,8 @@ a:hover {
     color: #005900;
 }
 
+
+/* Style rules for navigation */
 nav {
     width: 70%;
     float: right;
@@ -74,6 +77,7 @@ nav li a {
     text-decoration: none;
 }
 
+/* Style rules for header fonts */
 h1 {
     font-family: 'Lora', serif;
     color: #005900;
@@ -92,6 +96,7 @@ h3 {
     text-decoration: none;
 }
 
+/* Style rules for footer */
 footer p {
     font-size: 1em;
     text-align: center;
@@ -104,6 +109,7 @@ footer p a {
     text-decoration: none;
 }
 
+/* Style rules for my work page */
 #addesigns,
 #newsdesigns,
 #photography {
@@ -112,6 +118,7 @@ footer p a {
     margin: 0 2%;
 }
 
+/* Style rules for about page */
 #aboutmeimg {
     width: 25%;
     float: left;
@@ -124,6 +131,10 @@ footer p a {
     margin: 0 1%;
 }
 
+.clear {
+    clear: both;
+}
+
 /* Clear floats after the columns */
 footer {
     content: "";
@@ -131,6 +142,7 @@ footer {
     clear: both;
 }
 
+/* Style rules for experience page */
 #experiencelist {
     margin-left: 2%;
 }
@@ -166,4 +178,85 @@ footer {
 #accomplishments li {
     padding: 0.5% 1% 1% 0;
     margin-left: 2%;
+}
+
+/* Begin style rules for mobile viewport
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #87ae73;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+}
+
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em; 
+    font-family: 'Lora', serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+*/
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px) {
+    
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+    
+    /* Desktop Viewport: Style rule for navigation */
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0; 
+    }
+    
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border: none;
+    }
+    
+    nav li a {
+        padding: 0.5em 1em;
+    }
+    
+    /* Desktop Viewport: Style rules for main */
+    main {
+        clear: left;
+    }
+    
+    main h1 {
+        font-size: 1.8em;
+    }
 }
