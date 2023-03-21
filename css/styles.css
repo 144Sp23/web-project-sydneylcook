@@ -21,13 +21,13 @@ li {
     border: 0;
 }
 
-/* Begin style rules for desktop viewport */
 /* Style rules for main, body, img, and header */
 main {
     background-color: #fff;
     clear: left;
-    padding: 2%;
     font-size: 1.25em;
+    padding: 2%;
+    word-wrap: break-word;
 }
 
 body {
@@ -37,13 +37,6 @@ body {
 img {
     max-width: 100%;
     display: block;
-    margin-top: 2%;
-}
-
-header {
-    width: 25%;
-    float: left;
-    margin-bottom: 2%
 }
 
 /* Style rules for hover links */
@@ -53,32 +46,6 @@ a:hover {
 
 .external-link:hover {
     color: #87ae73;
-}
-
-/* Style rules for navigation */
-nav {
-    width: 70%;
-    float: right;
-    margin: 5em 3em 0 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1.75em;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
 }
 
 /* Style rules for header fonts */
@@ -114,81 +81,25 @@ footer p a {
     text-decoration: none;
 }
 
-/* Style rules for my work page */
-#addesigns,
-#newsdesigns,
-#photography {
-    width: 29%;
-    float: left;
-    margin: 0 2%;
-}
-
-/* Style rules for about page */
-#aboutmeimg {
-    width: 25%;
-    float: left;
-    margin: 0 1%;
-}
-
-#aboutme {
-    width: 70%;
-    float: left;
-    margin: 0 1%;
-}
-
-.clear {
-    clear: both;
-}
-
-/* Clear floats after the columns */
-footer {
-    content: "";
-    clear: both;
-}
-
-/* Style rules for experience page */
-#experiencelist {
-    margin-left: 2%;
-}
-
-#experiencetitle {
-    text-align: center;
-    margin: 0 0 2% 0;
-}
-
-#pastwork {
-    text-align: center;
-    margin: 0 0 2% 0;
-}
-
-#education ul {
-    margin-bottom: 2%;
-}
-
-#experience ul {
-    margin-bottom: 2%;
-}
-
-#education li {
-    padding: 0.5% 1% 1% 0;
-    margin-left: 2%;
-}
-
-#experience li {
-    padding: 0.5% 1% 1% 0;
-    margin-left: 2%;
-}
-
-#accomplishments li {
-    padding: 0.5% 1% 1% 0;
-    margin-left: 2%;
-}
-
 /* Begin style rules for mobile viewport */
+/* Style rules for header */
+header {
+    margin-bottom: 2%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #87ae73;
+}
+
+header img {
+    margin: 0 auto;
+}
+
 /* Style rules for navigation */
 nav {
     padding: 1%;
     margin-bottom: 1%;
+    background-color: #87ae73;
 }
 
 nav ul {
@@ -197,7 +108,7 @@ nav ul {
 }
 
 nav li {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     font-family: 'Lora', serif;
     border-top: 1px solid #fff;
 }
@@ -213,42 +124,145 @@ nav li a {
     text-decoration: none;
 }
 
+#experiencelist li {
+    list-style-type: circle;
+    text-indent: 10px;
+    display: block;
+}
+
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 769px) {
-    
+@media screen and (min-width: 1015px) {
+
     /* Desktop Viewport: Style rule for header */
     header {
         width: 25%;
         float: left;
-        padding-bottom: 0;
+        padding-bottom: 2%;
+        position: static;
     }
-    
+
     /* Desktop Viewport: Style rule for navigation */
     nav {
         float: right;
         width: 70%;
-        margin: 4em 1em 0 0; 
+        margin: 4em 1em 0 0;
     }
-    
+
     nav ul {
         text-align: right;
     }
-    
+
     nav li {
         border: none;
     }
-    
+
     nav li a {
         padding: 0.5em 1em;
     }
-    
+
     /* Desktop Viewport: Style rules for main */
     main {
         clear: left;
+        padding: 2%;
     }
-    
+
     main h1 {
         font-size: 1.8em;
     }
+
+    /* Style rules for my work page */
+    #addesigns,
+    #newsdesigns,
+    #photography {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    /* Style rules for about page */
+    #aboutmeimg {
+        width: 25%;
+        float: left;
+        margin: 0 1%;
+    }
+
+    #aboutme {
+        width: 70%;
+        float: left;
+        margin: 0 1%;
+    }
+
+    .clear {
+        clear: both;
+    }
+
+    /* Clear floats after the columns */
+    footer {
+        content: "";
+        clear: both;
+    }
+
+    /* Style rules for experience page */
+    #experiencelist {
+        margin-left: 2%;
+    }
+
+    #experiencetitle {
+        text-align: center;
+        margin: 0 0 2% 0;
+    }
+
+    #pastwork {
+        text-align: center;
+        margin: 0 0 2% 0;
+    }
+
+    #education ul {
+        margin-bottom: 2%;
+    }
+
+    #experience ul {
+        margin-bottom: 2%;
+    }
+
+    #education li {
+        padding: 0.5% 1% 1% 0;
+        margin-left: 2%;
+    }
+
+    #experience li {
+        padding: 0.5% 1% 1% 0;
+        margin-left: 2%;
+    }
+
+    #accomplishments li {
+        padding: 0.5% 1% 1% 0;
+        margin-left: 2%;
+    }
+    
+    /* Style rules for navigation 
+nav {
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+} */
+}
