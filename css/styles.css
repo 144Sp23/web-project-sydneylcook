@@ -25,7 +25,7 @@ main {
     background-color: #fff;
     clear: left;
     font-size: 1.25em;
-    padding: 2%;
+    padding: 1%;
     word-wrap: break-word;
 }
 
@@ -208,10 +208,6 @@ nav li a {
         float: left;
         margin: 0 1%;
     }
-    
-    #aboutmetitle {
-        text-align: left;
-    }
 
     #aboutme {
         width: 70%;
@@ -236,7 +232,6 @@ nav li a {
 
     #experiencetitle {
         text-align: center;
-        margin: 0 0 2% 0;
     }
 
     #education ul {
@@ -265,7 +260,6 @@ nav li a {
     /* Style rules for my work page */
     #pastwork {
         text-align: center;
-        margin: 0 0 2% 0;
     }
     
     #addesigns,
