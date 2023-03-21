@@ -13,7 +13,7 @@ footer,
 h3,
 h1,
 div,
-img,
+img
  {
     margin: 0;
     padding: 0;
@@ -84,7 +84,6 @@ footer p a {
 /* Style rules for header */
 header {
     margin-bottom: 2%;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     background-color: #87ae73;
