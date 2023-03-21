@@ -66,6 +66,22 @@ h3 {
     text-decoration: none;
 }
 
+#aboutmetitle {
+    text-align: center;
+}
+
+#nameintro {
+    text-align: center;
+}
+
+#experiencetitle {
+    text-align: center;
+}
+
+#pastwork {
+    text-align: center;
+}
+
 /* Style rules for footer */
 footer p {
     font-size: 1em;
@@ -90,12 +106,9 @@ header {
     background-color: #87ae73;
 }
 
-h1 {
-    text-align: center;
-}
-
 header img {
     margin: 0 auto;
+    padding-bottom: 5%;
 }
 
 /* Style rules for navigation */
@@ -136,6 +149,8 @@ nav li a {
     header {
         width: 25%;
         float: left;
+        padding-top: 0;
+        margin: 0 auto;
         padding-bottom: 2%;
         position: static;
     }
@@ -149,43 +164,53 @@ nav li a {
 
     nav ul {
         text-align: right;
-        padding: 0;
+        list-style-type: none;
+        padding: 5%;
         border: 0;
     }
 
     nav li {
         border: 0;
         padding: 0;
+        display: inline-block;
+        font-size: 1.75em;
     }
 
     nav li a {
         padding: 0.5em 1em;
+        display: block;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
     }
 
     /* Desktop Viewport: Style rules for main */
     main {
         clear: left;
-        padding: 2%;
+        margin: 0 auto;
     }
 
     main h1 {
         font-size: 1.8em;
     }
 
-    /* Style rules for my work page */
-    #addesigns,
-    #newsdesigns,
-    #photography {
-        width: 29%;
-        float: left;
-        margin: 0 2%;
-    }
-
     /* Style rules for about page */
+    #aboutmetitle {
+        text-align: left;
+    }
+    
+    #nameintro {
+        text-align: left;
+    }
+    
     #aboutmeimg {
         width: 25%;
         float: left;
         margin: 0 1%;
+    }
+    
+    #aboutmetitle {
+        text-align: left;
     }
 
     #aboutme {
@@ -214,11 +239,6 @@ nav li a {
         margin: 0 0 2% 0;
     }
 
-    #pastwork {
-        text-align: center;
-        margin: 0 0 2% 0;
-    }
-
     #education ul {
         margin-bottom: 2%;
     }
@@ -242,28 +262,17 @@ nav li a {
         margin-left: 2%;
     }
     
-    /* Style rules for navigation 
-nav {
-    width: 70%;
-    float: right;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: right;
-}
-
-nav li {
-    display: inline-block;
-    font-size: 1.75em;
-}
-
-nav li a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    padding: 0.5em 1em;
-    text-decoration: none;
-} */
+    /* Style rules for my work page */
+    #pastwork {
+        text-align: center;
+        margin: 0 0 2% 0;
+    }
+    
+    #addesigns,
+    #newsdesigns,
+    #photography {
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
 }
